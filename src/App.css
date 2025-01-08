@@ -28,6 +28,8 @@ body {
   width: 90%; /* To ensure it doesn't consume the entire width on smaller screens */
   max-width: 350px; /* Ensure it is not too big on larger screen sizes */
   background-color: #f00;
+  border-radius: 10px;
+  border: none;
   /* padding: 3px; */
 }
 
@@ -38,28 +40,44 @@ body {
 
 #display-container {
   background-color: purple;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
   text-align: right;
-  padding: 3px;
+  padding: 5px;
+  position: relative;
 }
 
 #history,
 #display {
   min-height: 2.5rem;
-  padding: 0 10px 5px;
+  padding: 2px 5px;
   overflow: hidden; /* Will take a moment to think about this later */
+}
+
+#display {
+  font-size: 2rem;
 }
 
 #history {
   opacity: 0.7;
 }
 
+#temp-result {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0.4;
+}
+
 #buttons {
-  padding: 5px;
+  padding: 4px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 2px;
+  gap: 1px;
   background-color: aqua;
+  border: none;
   min-height: 300px; /* Could change this later */
 }
 

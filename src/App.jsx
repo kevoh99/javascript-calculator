@@ -23,6 +23,7 @@ function App() {
           <div id="display-container">
             <div id="history">0</div>
             <div id="display">0</div>
+            <div id="temp-result">0</div>
           </div>
           <div id="buttons">
             <button id="clear" onClick={handleClear}>
