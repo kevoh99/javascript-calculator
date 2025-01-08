@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+
+.app {
+  /*  font-family: "Lato", sans-serif;
+  font-size: 1.5rem; */
+  text-align: center;
+  color: #fff;
+  background-color: #f0f6fc;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%; /* To ensure it doesn't consume the entire width on smaller screens */
+  max-width: 350px; /* Ensure it is not too big on larger screen sizes */
+  background-color: #f00;
+  /* padding: 3px; */
+}
+
+/* .calculator {
+  background-color: #282c34;
+  padding: 3px;
+} */
+
+#display-container {
+  background-color: purple;
+  text-align: right;
+  padding: 3px;
+}
+
+#history,
+#display {
+  min-height: 2.5rem;
+  padding: 0 10px 5px;
+  overflow: hidden; /* Will take a moment to think about this later */
+}
+
+#history {
+  opacity: 0.7;
+}
+
+#buttons {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2px;
+  background-color: aqua;
+  min-height: 300px; /* Could change this later */
+}
+
+button {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* 
+Control the colums and rows the 
+Clear/Zero/Equals buttons take 
+*/
+#clear {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+#equals {
+  grid-column: 4/5;
+  grid-row: 4/6;
+}
+#zero {
+  grid-column: 1/3;
+  grid-row: 5/6;
+}
+
+footer {
+  padding: 10px;
+  font-size: 0.9rem;
+}
