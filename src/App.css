@@ -5,7 +5,13 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+}
 body {
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
@@ -17,6 +23,7 @@ body {
   text-align: center;
   color: #fff;
   background-color: #f0f6fc;
+  background-color: #00b3b3;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -28,21 +35,18 @@ body {
   width: 90%; /* To ensure it doesn't consume the entire width on smaller screens */
   max-width: 350px; /* Ensure it is not too big on larger screen sizes */
   background-color: #f00;
+  /* background-color: #505050; */
   border-radius: 10px;
   border: none;
   /* padding: 3px; */
 }
 
-/* .calculator {
-  background-color: #282c34;
-  padding: 3px;
-} */
-
 #display-container {
+  min-height: 100px;
   background-color: purple;
+  /* background-color: #505050; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border: none;
   text-align: right;
   padding: 5px;
   position: relative;
@@ -60,14 +64,14 @@ body {
 }
 
 #history {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 #temp-result {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 #buttons {
@@ -77,6 +81,7 @@ body {
   grid-template-rows: repeat(5, 1fr);
   gap: 1px;
   background-color: aqua;
+  /* background-color: #505050; */
   border: none;
   min-height: 300px; /* Could change this later */
 }
@@ -87,13 +92,13 @@ button {
 }
 
 /* 
-Control the colums and rows the 
-Clear/Zero/Equals buttons take 
+Control the colums and rows the 'Clear',
+'Zero', and 'Equals' buttons take 
 */
-#clear {
+/* #clear {
   grid-column: 1/3;
   grid-row: 1/2;
-}
+} */
 #equals {
   grid-column: 4/5;
   grid-row: 4/6;
